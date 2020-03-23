@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.circle {
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	background: transparent;
+	border-radius: 50%;
+	box-shadow: 30px 30px 0 #FFA07A,
+	            -30px 30px 0 #EE7AE9,
+	            30px -30px 0 #B8860B,
+	            -30px -30px 0 #698B22,
+	            0px -45px 0  #0000EE,
+	            0px 45px 0 #668B8B,
+	            45px 0px 0 #90EE90,
+	            -45px 0px 0 #9F79EE;
+	 animation: an 5s infinite;
+}
+
+@keyframes an {
+	0% {
+		box-shadow: 0px 0px 0 #FFA07A,
+	            0px 0px 0 #EE7AE9,
+	            0px 0px 0 #B8860B,
+	            0px 0px 0 #698B22,
+	           0px 0px 0  #0000EE,
+	            0px 0px 0 #668B8B,
+	            0px 0px 0 #90EE90,
+	            0px 0px 0 #9F79EE;
+	    transform: rotate(0deg);
+
+	}
+	25% {
+		box-shadow: 30px 30px 0 #FFA07A,
+	            -30px 30px 0 #EE7AE9,
+	            30px -30px 0 #B8860B,
+	            -30px -30px 0 #698B22,
+	            0px -45px 0  #0000EE,
+	            0px 45px 0 #668B8B,
+	            45px 0px 0 #90EE90,
+	            -45px 0px 0 #9F79EE;
+	     transform: rotate(360deg);
+
+	}
+	75% {
+		
+	     box-shadow: 30px 30px 0 #FFA07A,
+	            -30px 30px 0 #EE7AE9,
+	            30px -30px 0 #B8860B,
+	            -30px -30px 0 #698B22,
+	            0px -45px 0  #0000EE,
+	            0px 45px 0 #668B8B,
+	            45px 0px 0 #90EE90,
+	            -45px 0px 0 #9F79EE;
+	     transform: rotate(720deg);
+
+
+	}
+	100% {
+		box-shadow: 0px 0px 0 #FFA07A,
+	            0px 0px 0 #EE7AE9,
+	            0px 0px 0 #B8860B,
+	            0px 0px 0 #698B22,
+	           0px 0px 0  #0000EE,
+	            0px 0px 0 #668B8B,
+	            0px 0px 0 #90EE90,
+	            0px 0px 0 #9F79EE;
+	     transform: rotate(1440deg);
+
+	}
+
+}
